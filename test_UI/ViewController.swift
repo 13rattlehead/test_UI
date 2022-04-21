@@ -9,7 +9,6 @@ class CounterViewController: UIViewController {
         }
     }
     
-    
     @IBOutlet weak var counterLabel: UILabel!
     @IBOutlet weak var addButton: UIButton!
     @IBOutlet weak var resetButton: UIButton!
@@ -45,8 +44,7 @@ class CounterViewController: UIViewController {
     }
     
     @IBAction func inpurCountFromText(_ sender: UITextField) {
-        let newCount = Int(readLine(strippingNewline: true)!)!
-        count = newCount
+        count = Int (textCount.text!)!
     }
     @IBAction func switchDidChange(_ sender: UISwitch) {
         if (allowNegativeNumbers.isOn == true){
