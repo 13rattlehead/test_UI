@@ -68,12 +68,12 @@
                                     <action selector="switchDidChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="K13-Fy-xAA"/>
                                 </connections>
                             </switch>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="rmh-9g-JjR">
-                                <rect key="frame" x="198" y="239" width="32" height="34"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Input number" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZXy-y5-t7X">
+                                <rect key="frame" x="157" y="249" width="114.33333333333331" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                                 <connections>
-                                    <action selector="inpurCountFromText:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="SEu-91-4sa"/>
+                                    <action selector="inputNumber:" destination="BYZ-38-t0r" eventType="valueChanged" id="Ymu-p9-I37"/>
                                 </connections>
                             </textField>
                         </subviews>
@@ -81,12 +81,12 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="iWk-7z-Xez" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HGx-Lx-NyE"/>
-                            <constraint firstItem="rmh-9g-JjR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LVU-i0-5rb"/>
                             <constraint firstItem="6uS-0B-GoM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="Oq2-4M-yEc"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="EDo-RR-4aF" secondAttribute="trailing" constant="15" id="WIP-e1-Jq7"/>
                             <constraint firstItem="EDo-RR-4aF" firstAttribute="top" secondItem="iWk-7z-Xez" secondAttribute="bottom" constant="20" id="Wrh-Ur-qW8"/>
                             <constraint firstItem="iWk-7z-Xez" firstAttribute="top" secondItem="6uS-0B-GoM" secondAttribute="bottom" constant="15" id="Zfh-nu-KEU"/>
-                            <constraint firstItem="rmh-9g-JjR" firstAttribute="top" secondItem="EDo-RR-4aF" secondAttribute="bottom" constant="49" id="nrc-cw-d2u"/>
+                            <constraint firstItem="ZXy-y5-t7X" firstAttribute="top" secondItem="EDo-RR-4aF" secondAttribute="bottom" constant="59" id="cXV-9I-DAc"/>
+                            <constraint firstItem="ZXy-y5-t7X" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jgc-cv-8tQ"/>
                             <constraint firstItem="jXC-GC-Dm2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ovm-7Q-Mki"/>
                             <constraint firstItem="EDo-RR-4aF" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="15" id="po8-tf-eaj"/>
                             <constraint firstItem="jXC-GC-Dm2" firstAttribute="top" secondItem="EDo-RR-4aF" secondAttribute="bottom" constant="169" id="tvD-O6-Ecn"/>
@@ -97,9 +97,9 @@
                         <outlet property="addButton" destination="U51-Qp-Zhm" id="8eN-kV-z6L"/>
                         <outlet property="allowNegativeNumbers" destination="jXC-GC-Dm2" id="88k-Q2-Bsf"/>
                         <outlet property="counterLabel" destination="6uS-0B-GoM" id="x3C-qo-fe8"/>
+                        <outlet property="numberTextField" destination="ZXy-y5-t7X" id="tC2-oq-gAd"/>
                         <outlet property="reduceButton" destination="vQH-d4-Vub" id="03j-ZI-8v4"/>
                         <outlet property="resetButton" destination="twQ-8A-fHt" id="zSo-dh-ThQ"/>
-                        <outlet property="textCount" destination="rmh-9g-JjR" id="dXU-hJ-qMU"/>
                         <outlet property="valueSlider" destination="EDo-RR-4aF" id="3gP-Ul-pWE"/>
                     </connections>
                 </viewController>
